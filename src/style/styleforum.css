@@ -1,0 +1,73 @@
+
+.msg {
+	color:black;
+	font-size: 70px;
+	text-align: center;
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+textarea[type=sujet] {
+    background-color: #ca2017;
+    color: #ca2017;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+select {
+    
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    width: 100%;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
+#container{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+}
+
+#container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+#Cforum{width: 780px; 
+    min-height: 300px; 
+    padding: 10px;
+     margin: auto; 
+     margin-top: 20px; 
+     background-color: white;
+    }
+
+.categories {width: 500px; margin: auto; background-color: rgb(235, 235, 235); height: 50px; line-height: 50px; margin-top: 20px; padding: 10px;  }
+.reponse{
+    border:  1px solid #ca2017;
+    margin: auto; 
+    margin-top: 10px;min-height: 150px; width: 700px; padding: 10px; }
+

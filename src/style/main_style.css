@@ -1,0 +1,273 @@
+
+/*** GENERAL STYLE ***/
+
+body {
+    font-family: Palatino,
+    			"Palatino Linotype",
+    			"Palatino LT STD",
+    			"Book Antiqua",
+    			Times,
+    			"Times New Roman",
+    			serif;
+}
+
+header,footer{
+	background-color: #2D383A;
+	color: white;
+	text-align: center;
+	padding: 1%;
+	margin: 3px;
+}
+
+header h1{
+	font-size: 4em;
+	font-weight: bold;
+    color: white;
+}
+
+header h2{
+    color: white;
+    text-align: center;
+}
+
+h1,h2{
+    color: #ca2017;
+    text-align: center;
+}
+
+h3{
+    color: #ca2017;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+/*** SIDEBAR STYLE ***/
+
+#sidebar {
+	  margin-left: 3px;
+    width: 20%;
+    padding: 20px;
+    background: #ca2017;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -20%;
+}
+
+#sidebar  a {
+	padding: 20px 0;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar a:hover {
+    color: #ca2017;
+    background: #fff;
+}
+
+#menu_btn{
+	background-color: #ca2017;
+	color: white;
+}
+
+
+
+/*** CONTENT STYLE ***/
+
+#content {
+    padding: 20px;
+    width: 80%;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+#main{
+	padding-top: 20px;
+}
+
+.check_img{
+    margin-right:1%;
+    margin-left:1%;
+    height: 5%;
+    width: 5%;
+}
+
+.error_msg{
+    text-align: center;
+    color: red;
+}
+
+.succes_msg{
+    text-align: center;
+    color: green;
+}
+
+
+/*** FORM STYLE ***/
+
+form,.info_mat{
+    width:40%;
+    margin-left: 20%;
+}
+
+input[type=text],input[type=date], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: rgb(250, 255, 189);
+}
+input[type=submit] {
+    background-color: #ca2017;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
+select {
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    width: 100%;
+}
+
+/**** SEARCH FORMS STYLE ***/
+
+    .search_form {
+      -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      padding: 1%;
+      margin-bottom: 5%;
+    }
+
+    .search_form > .textbox {
+      height: 42px;
+      width: 80%;
+      line-height: 42px;
+      padding: 1 16px;
+      color: #212121;
+      border: 0;
+      -webkit-border-radius: 4px 0 0 4px;
+      border-radius: 4px 0 0 4px;
+      background-color: rgb(250, 255, 189);
+    }
+
+    .search_form > .button {
+      background-color: #ca2017;
+      height: 42px;
+      width: 18%;
+      text-align: center;
+      line-height: 42px;
+      border-radius: 4px;
+      color: #FFF;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: 16px;
+      text-rendering: auto;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+      -webkit-transition: background-color .4s ease;
+      transition: background-color .4s ease;
+      -webkit-border-radius: 0 4px 4px 0;
+      border-radius: 0 4px 4px 0;
+    }
+
+/*** IMAGE TABLES STYLE ***/
+
+.img_table{
+
+    font-weight: bold;
+    font-style: italic;
+    color: #ca2017;
+    font-size: 14pt;
+    text-align: center;
+    
+}
+
+.img_table td {
+    padding: 3%;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/*** MEDIAQUERIES ***/
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -20%;
+    }
+    #sidebar.active {
+        margin-left: 3px;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1,h2{
+        font-size: 2em;
+        font-weight: lighter;
+    }
+}
+
+@media (max-width: 450px) {
+    #sidebar {
+        margin-left: -30%;
+        width: 30%;
+    }
+    
+    #sidebar.active {
+        margin-left: 3px;
+    }
+    #content{
+      width: 70%;
+    }
+    #menu_btn span {
+        display: none;
+    }
+    form,.info_mat{
+      width:100%;
+      margin-left: 2%;
+    }
+}
+
+@media (max-width: 300px) {
+    #sidebar {
+        margin-left: -40%;
+        width: 40%;
+    }
+    
+    #sidebar.active {
+        margin-left: 3px;
+    }
+    #content{
+      width: 60%;
+    }
+    body{
+      font-weight: lighter;
+      font-size: 10pt;
+    }
+}
+
